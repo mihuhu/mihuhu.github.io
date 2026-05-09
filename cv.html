@@ -8,7 +8,7 @@
       name="description"
       content="Curriculum Vitae of Ruihan Hu, Ph.D. candidate at Beijing University of Posts and Telecommunications."
     >
-    <link rel="stylesheet" href="styles.css?v=20260505-compact-pages">
+    <link rel="stylesheet" href="styles.css?v=20260510-rich-content-pages">
   </head>
   <body>
     <header class="site-header">
@@ -48,52 +48,55 @@
           </ul>
         </aside>
 
-        <main class="page-content page-content-cv">
-          <section class="cv-section" aria-labelledby="general-information-title">
-            <h3 class="section-title" id="general-information-title">General Information</h3>
-            <ul class="cv-list">
-              <li>Full Name: Ruihan Hu</li>
-              <li>Date of Birth: Oct. 2000</li>
-              <li>Email: gloria-1019@bupt.edu.cn</li>
-            </ul>
-          </section>
+        <main class="page-content page-content-cv page-content-rich">
+          <section class="content-card cv-sections-card" aria-label="Curriculum sections">
+            <section class="cv-section cv-section-card" aria-labelledby="general-information-title">
+              <h3 class="section-title" id="general-information-title">General Information</h3>
+              <div class="cv-info-grid">
+                <div class="cv-info-chip">Full Name: Ruihan Hu</div>
+                <div class="cv-info-chip">Date of Birth: Oct. 2000</div>
+                <div class="cv-info-chip">Email: gloria-1019@bupt.edu.cn</div>
+              </div>
+            </section>
 
-          <section class="cv-section" aria-labelledby="education-title">
-            <h3 class="section-title" id="education-title">Education</h3>
-            <ul class="cv-list">
-              <li>
-                Ph.D. candidate in Cyberspace Security, Beijing University of Posts and
-                Telecommunications, expected June 2027
-                <ul class="cv-sublist">
-                  <li>First Prize Scholarship</li>
-                </ul>
-              </li>
-              <li>
-                Bachelor's degree in Internet of Things Engineering, Beijing University of Posts
-                and Telecommunications, June 2022
-                <ul class="cv-sublist">
-                  <li>Outstanding Thesis Award</li>
-                  <li>Excellent Student Cadre</li>
-                  <li>Meritorious Winner, Mathematical Contest in Modeling (MCM/ICM)</li>
-                </ul>
-              </li>
-            </ul>
-          </section>
+            <section class="cv-section cv-section-card" aria-labelledby="education-title">
+              <h3 class="section-title" id="education-title">Education</h3>
+              <ul class="cv-list">
+                <li>
+                  Ph.D. candidate in Cyberspace Security, Beijing University of Posts and
+                  Telecommunications, expected June 2027
+                  <ul class="cv-sublist">
+                    <li>First Prize Scholarship</li>
+                  </ul>
+                </li>
+                <li>
+                  Bachelor's degree in Internet of Things Engineering, Beijing University of Posts
+                  and Telecommunications, June 2022
+                  <ul class="cv-sublist">
+                    <li>Outstanding Thesis Award</li>
+                    <li>Excellent Student Cadre</li>
+                    <li>Meritorious Winner, Mathematical Contest in Modeling (MCM/ICM)</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
 
-          <section class="cv-section" aria-labelledby="research-focus-title">
-            <h3 class="section-title" id="research-focus-title">Research Focus</h3>
-            <ul class="cv-list">
-              <li>Privacy and attack-defense in LLMs</li>
-              <li>Adversarial attacks, text watermarking, and LLM memorization</li>
-              <li>Knowledge unlearning and safety alignment</li>
-            </ul>
-          </section>
+            <section class="cv-section cv-section-card" aria-labelledby="research-focus-title">
+              <h3 class="section-title" id="research-focus-title">Research Focus</h3>
+              <ul class="cv-list">
+                <li>Privacy and attack-defense in LLMs</li>
+                <li>Adversarial attacks, text watermarking, and LLM memorization</li>
+                <li>Knowledge unlearning and safety alignment</li>
+              </ul>
+            </section>
 
-          <section class="cv-section" aria-labelledby="research-experience-title">
-            <h3 class="section-title" id="research-experience-title">Research Experience</h3>
-            <ul class="cv-list">
-              <li>
-                Dec 2025 - Present: Robust data-use auditing under watermark evasion settings
+            <section class="cv-section cv-section-card" aria-labelledby="research-experience-title">
+              <h3 class="section-title" id="research-experience-title">Research Experience</h3>
+
+              <div class="cv-timeline-item">
+                <p class="cv-timeline-heading">
+                  <strong>Dec 2025 - Present: Robust data-use auditing under watermark evasion settings</strong>
+                </p>
                 <ul class="cv-sublist">
                   <li>
                     Investigate how adversaries can weaken watermark signals and evade current
@@ -101,19 +104,24 @@
                     attribution and compliance verification.
                   </li>
                 </ul>
-              </li>
-              <li>
-                Mar 2025 - Present: Black-box auditing of sensitive and copyrighted materials in
-                LLMs
+              </div>
+
+              <div class="cv-timeline-item">
+                <p class="cv-timeline-heading">
+                  <strong>Mar 2025 - Present: Black-box auditing of sensitive and copyrighted materials in LLMs</strong>
+                </p>
                 <ul class="cv-sublist">
                   <li>
                     Develop entropy-guided rewriting and perturbation-based auditing methods to
                     identify sensitive or copyrighted content in commercial black-box models.
                   </li>
                 </ul>
-              </li>
-              <li>
-                Jun 2025 - Nov 2025: Privacy leakage analysis for large reasoning models
+              </div>
+
+              <div class="cv-timeline-item">
+                <p class="cv-timeline-heading">
+                  <strong>Jun 2025 - Nov 2025: Privacy leakage analysis for large reasoning models</strong>
+                </p>
                 <ul class="cv-sublist">
                   <li>
                     Study how exposed reasoning traces create new membership leakage channels, and
@@ -122,9 +130,12 @@
                   </li>
                   <li>Representative work was accepted by WWW 2026.</li>
                 </ul>
-              </li>
-              <li>
-                Oct 2024 - Feb 2025: Automated pre-training data auditing for black-box LLMs
+              </div>
+
+              <div class="cv-timeline-item">
+                <p class="cv-timeline-heading">
+                  <strong>Oct 2024 - Feb 2025: Automated pre-training data auditing for black-box LLMs</strong>
+                </p>
                 <ul class="cv-sublist">
                   <li>
                     Develop zero-prompt automated detection methods for identifying whether
@@ -133,9 +144,12 @@
                   </li>
                   <li>Representative work was accepted by IJCAI 2025.</li>
                 </ul>
-              </li>
-              <li>
-                Nov 2025 - Present: Security and memory isolation analysis for shared LLM agents
+              </div>
+
+              <div class="cv-timeline-item">
+                <p class="cv-timeline-heading">
+                  <strong>Nov 2025 - Present: Security and memory isolation analysis for shared LLM agents</strong>
+                </p>
                 <ul class="cv-sublist">
                   <li>
                     Study memory isolation, access control, and information exposure risks in
@@ -143,9 +157,12 @@
                     cross-session safety.
                   </li>
                 </ul>
-              </li>
-              <li>
-                Oct 2024 - Present: Robust black-box membership inference with weak supervision
+              </div>
+
+              <div class="cv-timeline-item">
+                <p class="cv-timeline-heading">
+                  <strong>Oct 2024 - Present: Robust black-box membership inference with weak supervision</strong>
+                </p>
                 <ul class="cv-sublist">
                   <li>
                     Design collaborative weak-supervision frameworks that combine multi-task
@@ -153,9 +170,12 @@
                     black-box membership inference.
                   </li>
                 </ul>
-              </li>
-              <li>
-                Sep 2025 - Present: Adaptive jailbreak detection and safety alignment for LLMs
+              </div>
+
+              <div class="cv-timeline-item">
+                <p class="cv-timeline-heading">
+                  <strong>Sep 2025 - Present: Adaptive jailbreak detection and safety alignment for LLMs</strong>
+                </p>
                 <ul class="cv-sublist">
                   <li>
                     Develop immune-memory-inspired defense and evaluation methods for evolving
@@ -163,10 +183,9 @@
                     safety-aligned model behavior.
                   </li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </section>
           </section>
-
         </main>
       </div>
     </div>

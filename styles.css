@@ -192,6 +192,11 @@ a {
   gap: 24px;
 }
 
+.page-content-rich {
+  display: grid;
+  gap: 24px;
+}
+
 .hero-card,
 .preview-card {
   background:
@@ -239,6 +244,14 @@ a {
   margin-bottom: 0;
 }
 
+.hero-copy {
+  margin: 0;
+  max-width: 760px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #54606c;
+}
+
 .keyword-list {
   display: flex;
   flex-wrap: wrap;
@@ -283,6 +296,50 @@ a {
   text-transform: uppercase;
   color: var(--accent);
   text-decoration: none;
+}
+
+.page-hero {
+  padding: 30px 32px;
+}
+
+.page-hero .page-title {
+  margin-bottom: 14px;
+  font-size: 34px;
+  line-height: 1.08;
+  color: #4b5562;
+}
+
+.content-card {
+  padding: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(74, 166, 200, 0.12), transparent 26%),
+    rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 28px;
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.08);
+}
+
+.content-card-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.content-card-title {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.1;
+  color: #4b5562;
+}
+
+.content-card-note {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .cv-window {
@@ -413,6 +470,16 @@ a {
   line-height: 1.74;
 }
 
+.publication-list-card {
+  display: grid;
+  gap: 18px;
+}
+
+.publication-stack {
+  display: grid;
+  gap: 18px;
+}
+
 .page-title {
   margin: 0 0 28px;
   font-size: 40px;
@@ -451,6 +518,18 @@ a {
   color: #4f5964;
 }
 
+.publication-item-soft {
+  padding: 18px;
+  background:
+    radial-gradient(circle at top right, rgba(74, 166, 200, 0.08), transparent 24%),
+    rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(65, 73, 84, 0.08);
+  border-radius: 24px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    0 14px 28px rgba(15, 23, 42, 0.05);
+}
+
 .publication-entry {
   padding-top: 6px;
 }
@@ -459,11 +538,22 @@ a {
   margin-top: 34px;
 }
 
+.publication-stack .publication-entry + .publication-entry {
+  margin-top: 0;
+}
+
 .publication-card {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
   gap: 28px;
   align-items: start;
+}
+
+.publication-item-soft .publication-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
 }
 
 .publication-entry-visual {
@@ -594,8 +684,62 @@ a {
   color: #ffffff;
 }
 
+.cv-sections-card {
+  display: grid;
+  gap: 18px;
+}
+
+.cv-section-card {
+  padding: 22px 24px;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(74, 166, 200, 0.08), transparent 24%),
+    rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(65, 73, 84, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    0 14px 28px rgba(15, 23, 42, 0.05);
+}
+
 .cv-section + .cv-section {
   margin-top: 34px;
+}
+
+.cv-sections-card .cv-section + .cv-section {
+  margin-top: 0;
+}
+
+.cv-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, max-content));
+  gap: 8px 22px;
+}
+
+.cv-info-chip {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: 12px;
+  line-height: 1.55;
+  font-weight: 600;
+  color: #6e8c9c;
+}
+
+.cv-info-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7b8793;
+}
+
+.cv-info-value {
+  display: block;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4e5864;
 }
 
 .cv-list {
@@ -633,6 +777,23 @@ a {
   left: 0;
   top: 0;
   color: var(--accent-strong);
+}
+
+.cv-timeline-item {
+  padding: 14px 0;
+  border-top: 1px solid rgba(65, 73, 84, 0.08);
+}
+
+.cv-timeline-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.cv-timeline-heading {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4f5964;
 }
 
 .page-content-cv .page-title {
@@ -673,7 +834,10 @@ a {
   }
 
   .hero-card,
-  .preview-card {
+  .preview-card,
+  .content-card,
+  .cv-section-card,
+  .publication-item-soft {
     border-radius: 22px;
     padding: 20px;
   }
@@ -684,6 +848,10 @@ a {
 
   .cv-scroll {
     max-height: 360px;
+  }
+
+  .cv-info-grid {
+    grid-template-columns: 1fr;
   }
 
   .page-content-compact .page-title {
