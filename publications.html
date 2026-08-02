@@ -58,6 +58,51 @@
               <article class="publication-entry publication-item-soft">
                 <div class="publication-card">
               <div class="publication-entry-visual">
+                <span class="publication-entry-badge publication-entry-badge-ccs">ACM CCS 2026</span>
+                <span class="publication-entry-thumbnail">
+                  <img
+                    src="assets/publication-ccs.png"
+                    alt="Figure preview for Logit Laundering"
+                  >
+                </span>
+              </div>
+
+              <div class="publication-entry-body">
+                <h4 class="publication-entry-title">
+                  Logit Laundering: Evading Data-Use Auditing in Large Language Models
+                </h4>
+                <p class="publication-entry-authors">
+                  Ruihan Hu, Wei Luo, Yu-Ming Shang, Jiakai Wang, Chuxuan Zhang, Mei Li, Xi Zhang, and Meikang Qiu
+                </p>
+                <p class="publication-entry-meta">Accepted to ACM CCS 2026</p>
+                <p class="publication-entry-summary">
+                  This work studies adversarial evasion against data-use auditing in LLMs and
+                  proposes a logit-space laundering framework to suppress watermark-derived
+                  detection signals while preserving downstream utility.
+                </p>
+                <div class="publication-entry-actions">
+                  <button
+                    class="publication-entry-chip publication-entry-chip-primary"
+                    type="button"
+                    data-coming-soon
+                  >
+                    Paper
+                  </button>
+                  <button
+                    class="publication-entry-chip"
+                    type="button"
+                    data-coming-soon
+                  >
+                    Code
+                  </button>
+                </div>
+              </div>
+                </div>
+              </article>
+
+              <article class="publication-entry publication-item-soft">
+                <div class="publication-card">
+              <div class="publication-entry-visual">
                 <span class="publication-entry-badge publication-entry-badge-www">WWW 2026 (Oral)</span>
                 <a
                   class="publication-entry-thumbnail"
@@ -202,5 +247,27 @@
         </main>
       </div>
     </div>
+    <dialog class="coming-soon-dialog" id="coming-soon-dialog" aria-labelledby="coming-soon-title">
+      <div class="coming-soon-panel">
+        <h3 id="coming-soon-title">Coming soon</h3>
+        <p>Paper and code links will be released later.</p>
+        <button class="coming-soon-close" type="button" data-close-dialog>
+          Close
+        </button>
+      </div>
+    </dialog>
+    <script>
+      const comingSoonDialog = document.getElementById("coming-soon-dialog");
+      document.querySelectorAll("[data-coming-soon]").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          if (typeof comingSoonDialog.showModal === "function") {
+            comingSoonDialog.showModal();
+          }
+        });
+      });
+      document.querySelector("[data-close-dialog]").addEventListener("click", () => {
+        comingSoonDialog.close();
+      });
+    </script>
   </body>
 </html>
