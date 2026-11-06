@@ -1,0 +1,49 @@
+/* Shared personal rail with clean academic content. */
+.academic-interior .site-shell, .academic-interior .site-header-inner { width: min(1200px, calc(100% - 64px)); }
+.academic-interior .site-shell { padding-top: 38px; }
+.academic-interior .site-layout { display: grid; grid-template-columns: 230px minmax(0,1fr); gap: 50px; }
+.academic-interior .profile-rail { padding-top: 0; }
+.academic-interior .portrait { width: 112px; height: 112px; object-position: center 44%; box-shadow: none; margin-bottom: 20px; }
+.academic-interior .profile-name { font-size: 24px; color: #39424c; }
+.academic-interior .profile-bio { font-size: 14px; line-height: 1.85; }
+.academic-interior .profile-row { font-size: 13px; line-height: 1.65; }
+.academic-interior .profile-links a { color: #4e5761; }
+.academic-interior .page-content { min-width: 0; background: #fff; }
+.academic-cv .content-card, .academic-cv .cv-section-card { background: none; box-shadow: none; border: 0; border-radius: 0; padding: 0; }
+.academic-cv .cv-sections-card { gap: 28px; }
+.academic-cv .section-title { font: 600 24px/1.35 Georgia, serif; color: #333; padding-bottom: 12px; margin-bottom: 17px; }
+.academic-cv .cv-info-chip { font-size: 13px; font-weight: 400; color: #777; }
+.academic-cv .cv-list { padding-left: 18px; gap: 16px; }
+.academic-cv .cv-list li { font-size: 14px; line-height: 1.85; }
+.academic-cv .cv-sublist { margin-top: 5px; gap: 4px; }
+.academic-cv .cv-sublist li { font-size: 13px; line-height: 1.8; }
+.academic-cv .cv-timeline-heading { font-size: 14px; }
+.academic-cv [aria-labelledby="honours-title"] .cv-list li { color: #b52c87; }
+@media (max-width: 900px) { .academic-interior .site-layout { grid-template-columns: 190px minmax(0,1fr); gap: 28px; } .academic-publications .publication-card { grid-template-columns: 130px minmax(0,1fr); gap: 20px; } }
+@media (max-width: 680px) { .academic-interior .site-shell, .academic-interior .site-header-inner { width: calc(100% - 40px); } .academic-interior .site-layout { grid-template-columns: 1fr; gap: 30px; } .academic-interior .profile-rail { border-bottom: 1px solid #e5e5e5; padding-bottom: 20px; } .academic-interior .profile-bio { max-width: 440px; } .academic-interior .profile-links { display: flex; flex-wrap: wrap; gap: 16px; } .academic-interior .profile-meta { margin-bottom: 15px; } .academic-publications .publication-card { grid-template-columns: 1fr; } }
+
+/* Square formal portrait and typography shared with the home page. */
+.academic-interior .portrait { width: 180px; height: 180px; border-radius: 0; border: 0; object-fit: cover; object-position: center 28%; box-shadow: none; margin-bottom: 22px; }
+.academic-interior .profile-name { font: 600 27px/1.3 Georgia, "Times New Roman", serif; color: #333; margin-bottom: 14px; }
+.academic-interior .profile-bio { color: #555; font-size: 14px; line-height: 1.85; }
+.academic-interior .profile-links a { color: #0067cc; }
+.academic-interior .site-shell { padding-top: 48px; }
+@media (max-width: 680px) { .academic-interior .site-shell { padding-top: 28px; } .academic-interior .portrait { width: 160px; height: 160px; } }
+
+/* Compact square CV portrait. */
+.academic-cv .portrait { width: 96px; height: 96px; }
+
+/* Keep the full formal portrait visible and centered within the CV rail. */
+.academic-cv .portrait { width: 110px; height: auto; object-fit: contain; object-position: center; margin-left: auto; margin-right: auto; border-radius: 0; }
+
+.academic-cv .cv-organisation { color: #0067cc; }
+
+/* Slightly tighter CV text and entry spacing. */
+.academic-cv .cv-list li { line-height: 1.6; }
+.academic-cv .cv-sublist li { line-height: 1.6; }
+.academic-cv .cv-list { gap: 12px; }
+.academic-cv .cv-sublist { gap: 3px; }
+.academic-cv .cv-timeline-heading { line-height: 1.5; margin-bottom: 6px; }
+.academic-cv .cv-timeline-item { padding: 11px 0; }
+.academic-cv .cv-sections-card { gap: 24px; }
+.academic-cv .section-title { margin-bottom: 14px; }
