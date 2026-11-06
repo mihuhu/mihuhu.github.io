@@ -1,263 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruihan Hu - Publications</title>
-    <meta
-      name="description"
-      content="Selected publications by Ruihan Hu on LLM privacy, data auditing, and model security."
-    >
-    <link rel="stylesheet" href="styles.css?v=20260510-rich-content-pages">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="site-header-inner">
-        <p class="site-brand">Ruihan Hu</p>
-        <nav class="site-nav" aria-label="Primary">
-          <a href="index.html">About</a>
-          <a href="publications.html" class="is-current" aria-current="page">Publications</a>
-          <a href="cv.html">CV</a>
-        </nav>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Ruihan Hu - Publications
+  </title>
+  <meta content="Selected publications by Ruihan Hu on LLM privacy, data auditing, and model security." name="description"/>
+  <link href="styles.css?v=20260510-rich-content-pages" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="site-header-inner">
+    <p class="site-brand">
+     Ruihan Hu
+    </p>
+    <nav aria-label="Primary" class="site-nav">
+     <a href="index.html">
+      About
+     </a>
+     <a aria-current="page" class="is-current" href="publications.html">
+      Publications
+     </a>
+     <a href="cv.html">
+      CV
+     </a>
+    </nav>
+   </div>
+  </header>
+  <div class="site-shell">
+   <div class="site-layout">
+    <aside aria-label="Profile" class="profile-rail">
+     <img alt="Portrait of Ruihan Hu" class="portrait" src="assets/profile-photo.jpg"/>
+     <h1 class="profile-name">
+      Ruihan Hu
+     </h1>
+     <p class="profile-bio">
+      Ph.D. candidate at Beijing University of Posts and Telecommunications. Her work focuses
+            on LLM data security, privacy and AI agent security.
+     </p>
+     <ul class="profile-meta">
+      <li class="profile-row profile-row-location">
+       Beijing, China
+      </li>
+      <li class="profile-row profile-row-institution">
+       Beijing University of Posts and Telecommunications
+      </li>
+     </ul>
+     <ul class="profile-links">
+      <li class="profile-row profile-row-email">
+       <a href="mailto:gloria-1019@bupt.edu.cn">
+        Email
+       </a>
+      </li>
+      <li class="profile-row profile-row-scholar">
+       Google Scholar
+      </li>
+      <li class="profile-row profile-row-github">
+       <a href="https://github.com/mihuhu">
+        GitHub
+       </a>
+      </li>
+     </ul>
+    </aside>
+    <main class="page-content page-content-publications page-content-rich">
+     <section aria-labelledby="publication-stack-title" class="content-card publication-list-card">
+      <div class="content-card-head">
+       <h2 class="content-card-title" id="publication-stack-title">
+        Selected Publications &amp; Accepted Papers
+       </h2>
       </div>
-    </header>
-
-    <div class="site-shell">
-      <div class="site-layout">
-        <aside class="profile-rail" aria-label="Profile">
-          <img class="portrait" src="assets/profile-photo.jpg" alt="Portrait of Ruihan Hu">
-          <h1 class="profile-name">Ruihan Hu</h1>
-          <p class="profile-bio">
-            Ph.D. candidate at Beijing University of Posts and Telecommunications. Her work focuses
-            on trustworthy AI and LLM security.
+      <div class="publication-stack">
+       <article class="publication-entry publication-item-soft">
+        <div class="publication-card">
+         <div class="publication-entry-visual">
+          <span class="publication-entry-badge publication-entry-badge-ccs">
+           ACM CCS 2026
+          </span>
+          <span class="publication-entry-thumbnail">
+           <img alt="Figure preview for Logit Laundering" src="assets/publication-ccs.png"/>
+          </span>
+         </div>
+         <div class="publication-entry-body">
+          <h4 class="publication-entry-title">
+           Logit Laundering: Evading Data-Use Auditing in Large Language Models
+          </h4>
+          <p class="publication-entry-authors">
+           <strong>
+            Ruihan Hu
+           </strong>
+           , Wei Luo, Yu-Ming Shang, Jiakai Wang, Chuxuan Zhang, Mei Li, Xi Zhang, and Meikang Qiu
           </p>
-          <ul class="profile-meta">
-            <li class="profile-row profile-row-location">Beijing, China</li>
-            <li class="profile-row profile-row-institution">
-              Beijing University of Posts and Telecommunications
-            </li>
-          </ul>
-          <ul class="profile-links">
-            <li class="profile-row profile-row-email">
-              <a href="mailto:gloria-1019@bupt.edu.cn">Email</a>
-            </li>
-            <li class="profile-row profile-row-scholar">Google Scholar</li>
-            <li class="profile-row profile-row-github">
-              <a href="https://github.com/mihuhu">GitHub</a>
-            </li>
-          </ul>
-        </aside>
-
-        <main class="page-content page-content-publications page-content-rich">
-          <section class="content-card publication-list-card" aria-labelledby="publication-stack-title">
-            <div class="content-card-head">
-              <h2 class="content-card-title" id="publication-stack-title">Selected Publications</h2>
-            </div>
-
-            <div class="publication-stack">
-              <article class="publication-entry publication-item-soft">
-                <div class="publication-card">
-              <div class="publication-entry-visual">
-                <span class="publication-entry-badge publication-entry-badge-ccs">ACM CCS 2026</span>
-                <span class="publication-entry-thumbnail">
-                  <img
-                    src="assets/publication-ccs.png"
-                    alt="Figure preview for Logit Laundering"
-                  >
-                </span>
-              </div>
-
-              <div class="publication-entry-body">
-                <h4 class="publication-entry-title">
-                  Logit Laundering: Evading Data-Use Auditing in Large Language Models
-                </h4>
-                <p class="publication-entry-authors">
-                  <strong>Ruihan Hu</strong>, Wei Luo, Yu-Ming Shang, Jiakai Wang, Chuxuan Zhang, Mei Li, Xi Zhang, and Meikang Qiu
-                </p>
-                <p class="publication-entry-meta">Accepted to ACM CCS 2026</p>
-                <p class="publication-entry-summary">
-                  This work studies adversarial evasion against data-use auditing in LLMs and
+          <p class="publication-entry-meta">
+           Accepted to ACM CCS 2026
+          </p>
+          <p class="publication-entry-summary">
+           This work studies adversarial evasion against data-use auditing in LLMs and
                   proposes a logit-space laundering framework to suppress watermark-derived
                   detection signals while preserving downstream utility.
-                </p>
-                <div class="publication-entry-actions">
-                  <button
-                    class="publication-entry-chip publication-entry-chip-primary"
-                    type="button"
-                    data-coming-soon
-                  >
-                    Paper
-                  </button>
-                  <button
-                    class="publication-entry-chip"
-                    type="button"
-                    data-coming-soon
-                  >
-                    Code
-                  </button>
-                </div>
-              </div>
-                </div>
-              </article>
-
-              <article class="publication-entry publication-item-soft">
-                <div class="publication-card">
-              <div class="publication-entry-visual">
-                <span class="publication-entry-badge publication-entry-badge-www">WWW 2026 (Oral)</span>
-                <a
-                  class="publication-entry-thumbnail"
-                  href="https://dl.acm.org/doi/10.1145/3774904.3792588"
-                >
-                  <img
-                    src="assets/publication-www.png"
-                    alt="Figure preview for When Reasoning Leaks Membership"
-                  >
-                </a>
-              </div>
-
-              <div class="publication-entry-body">
-                <h4 class="publication-entry-title">
-                  <a href="https://dl.acm.org/doi/10.1145/3774904.3792588">
-                    When Reasoning Leaks Membership: Membership Inference Attack on Black-box Large
+          </p>
+          <div class="publication-entry-actions">
+           <button class="publication-entry-chip publication-entry-chip-primary" data-coming-soon="" type="button">
+            Paper
+           </button>
+           <button class="publication-entry-chip" data-coming-soon="" type="button">
+            Code
+           </button>
+          </div>
+         </div>
+        </div>
+       </article>
+       <article class="publication-entry publication-item-soft">
+        <div class="publication-card">
+         <div class="publication-entry-visual">
+          <span class="publication-entry-badge publication-entry-badge-www">
+           WWW 2026 (Oral)
+          </span>
+          <a class="publication-entry-thumbnail" href="https://dl.acm.org/doi/10.1145/3774904.3792588">
+           <img alt="Figure preview for When Reasoning Leaks Membership" src="assets/publication-www.png"/>
+          </a>
+         </div>
+         <div class="publication-entry-body">
+          <h4 class="publication-entry-title">
+           <a href="https://dl.acm.org/doi/10.1145/3774904.3792588">
+            When Reasoning Leaks Membership: Membership Inference Attack on Black-box Large
                     Reasoning Models
-                  </a>
-                </h4>
-                <p class="publication-entry-authors">
-                  <strong>Ruihan Hu</strong>, Yu-Ming Shang, Wei Luo, Ye Tao, and Xi Zhang
-                </p>
-                <p class="publication-entry-meta">In Proceedings of the ACM Web Conference 2026, 2026</p>
-                <p class="publication-entry-summary">
-                  This work introduces BlackSpectrum, the first membership inference attack
+           </a>
+          </h4>
+          <p class="publication-entry-authors">
+           <strong>
+            Ruihan Hu
+           </strong>
+           , Yu-Ming Shang, Wei Luo, Ye Tao, and Xi Zhang
+          </p>
+          <p class="publication-entry-meta">
+           In Proceedings of the ACM Web Conference 2026, 2026
+          </p>
+          <p class="publication-entry-summary">
+           This work introduces BlackSpectrum, the first membership inference attack
                   framework for black-box large reasoning models. It shows that exposed reasoning
                   traces can leak strong membership signals and substantially increase privacy risk.
-                </p>
-                <div class="publication-entry-actions">
-                  <a
-                    class="publication-entry-chip publication-entry-chip-primary"
-                    href="https://dl.acm.org/doi/10.1145/3774904.3792588"
-                  >
-                    Paper
-                  </a>
-                  <a
-                    class="publication-entry-chip"
-                    href="https://github.com/STAIR-BUPT/LRM-MIA"
-                  >
-                    Code
-                  </a>
-                </div>
-              </div>
-                </div>
-              </article>
-
-              <article class="publication-entry publication-item-soft">
-                <div class="publication-card">
-              <div class="publication-entry-visual">
-                <span class="publication-entry-badge publication-entry-badge-ijcai">IJCAI 2025</span>
-                <a
-                  class="publication-entry-thumbnail"
-                  href="https://dl.acm.org/doi/10.24963/ijcai.2025/44"
-                >
-                  <img
-                    src="assets/publication-ijcai.png"
-                    alt="Figure preview for Automated Detection of Pre-training Text in Black-box Large Language Models"
-                  >
-                </a>
-              </div>
-
-              <div class="publication-entry-body">
-                <h4 class="publication-entry-title">
-                  <a href="https://dl.acm.org/doi/10.24963/ijcai.2025/44">
-                    Automated Detection of Pre-training Text in Black-box Large Language Models
-                  </a>
-                </h4>
-                <p class="publication-entry-authors">
-                  <strong>Ruihan Hu</strong>, Yu-Ming Shang, Jiankun Peng, Wei Luo, Yazhe Wang, and Xi Zhang
-                </p>
-                <p class="publication-entry-meta">
-                  In Proceedings of the Thirty-Fourth International Joint Conference on Artificial
+          </p>
+          <div class="publication-entry-actions">
+           <a class="publication-entry-chip publication-entry-chip-primary" href="https://dl.acm.org/doi/10.1145/3774904.3792588">
+            Paper
+           </a>
+           <a class="publication-entry-chip" href="https://github.com/STAIR-BUPT/LRM-MIA">
+            Code
+           </a>
+          </div>
+         </div>
+        </div>
+       </article>
+       <article class="publication-entry publication-item-soft">
+        <div class="publication-card">
+         <div class="publication-entry-visual">
+          <span class="publication-entry-badge publication-entry-badge-ijcai">
+           IJCAI 2025
+          </span>
+          <a class="publication-entry-thumbnail" href="https://dl.acm.org/doi/10.24963/ijcai.2025/44">
+           <img alt="Figure preview for Automated Detection of Pre-training Text in Black-box Large Language Models" src="assets/publication-ijcai.png"/>
+          </a>
+         </div>
+         <div class="publication-entry-body">
+          <h4 class="publication-entry-title">
+           <a href="https://dl.acm.org/doi/10.24963/ijcai.2025/44">
+            Automated Detection of Pre-training Text in Black-box Large Language Models
+           </a>
+          </h4>
+          <p class="publication-entry-authors">
+           <strong>
+            Ruihan Hu
+           </strong>
+           , Yu-Ming Shang, Jiankun Peng, Wei Luo, Yazhe Wang, and Xi Zhang
+          </p>
+          <p class="publication-entry-meta">
+           In Proceedings of the Thirty-Fourth International Joint Conference on Artificial
                   Intelligence, 2025
-                </p>
-                <p class="publication-entry-summary">
-                  This paper proposes VeilProbe, an automated black-box auditing framework for
+          </p>
+          <p class="publication-entry-summary">
+           This paper proposes VeilProbe, an automated black-box auditing framework for
                   detecting whether candidate passages appeared in LLM pre-training corpora. It
                   improves scalability and stability without relying on manual prompt engineering.
-                </p>
-                <div class="publication-entry-actions">
-                  <a
-                    class="publication-entry-chip publication-entry-chip-primary"
-                    href="https://dl.acm.org/doi/10.24963/ijcai.2025/44"
-                  >
-                    Paper
-                  </a>
-                  <a
-                    class="publication-entry-chip"
-                    href="https://github.com/STAIR-BUPT/VeilProbe"
-                  >
-                    Code
-                  </a>
-                </div>
-              </div>
-                </div>
-              </article>
-
-              <article class="publication-entry publication-item-soft">
-                <div class="publication-card">
-              <div class="publication-entry-visual">
-                <span class="publication-entry-badge publication-entry-badge-arxiv">arXiv</span>
-                <a
-                  class="publication-entry-thumbnail"
-                  href="https://arxiv.org/abs/2512.03356"
-                >
-                  <img
-                    src="assets/publication-arxiv.png"
-                    alt="Figure preview for From static to adaptive: immune memory-based jailbreak detection for large language models"
-                  >
-                </a>
-              </div>
-
-              <div class="publication-entry-body">
-                <h4 class="publication-entry-title">
-                  <a href="https://arxiv.org/abs/2512.03356">
-                    From static to adaptive: immune memory-based jailbreak detection for large
+          </p>
+          <div class="publication-entry-actions">
+           <a class="publication-entry-chip publication-entry-chip-primary" href="https://dl.acm.org/doi/10.24963/ijcai.2025/44">
+            Paper
+           </a>
+           <a class="publication-entry-chip" href="https://github.com/STAIR-BUPT/VeilProbe">
+            Code
+           </a>
+          </div>
+         </div>
+        </div>
+       </article>
+      </div>
+     </section>
+     <section aria-labelledby="manuscripts-title" class="content-card publication-list-card">
+      <div class="content-card-head">
+       <h2 class="content-card-title" id="manuscripts-title">
+        Manuscripts Under Review
+       </h2>
+      </div>
+      <div class="publication-stack">
+       <article class="publication-entry publication-item-soft">
+        <h3 class="publication-entry-title">
+         Entropy-Aware Auditing Framework of Copyrighted Materials in LLMs
+        </h3>
+        <p class="publication-entry-meta">
+         IEEE TIFS — Minor revision
+        </p>
+        <p class="publication-entry-summary">
+         Combined API-accessible memorisation signals, predictive entropy and rewriting robustness to audit sensitive training data in black-box commercial LLMs.
+        </p>
+       </article>
+       <article class="publication-entry publication-item-soft">
+        <h3 class="publication-entry-title">
+         HorizonJIT: Just-in-Time Tool Authorization for Agents Performing Long-Horizon Tasks
+        </h3>
+        <p class="publication-entry-meta">
+         USENIX Security 2027 — Under review
+        </p>
+        <p class="publication-entry-summary">
+         Built LongHorizonBench; dynamic authorisation cut adverse outcomes by 45.7% while preserving task completion.
+        </p>
+       </article>
+       <article class="publication-entry publication-item-soft">
+        <h3 class="publication-entry-title">
+         CanarySkills: Detecting Agent Distillation via Skill-Based Behavioral Probes
+        </h3>
+        <p class="publication-entry-meta">
+         USENIX Security 2027 — Under review
+        </p>
+        <p class="publication-entry-summary">
+         Elicited teacher-specific behaviours via diagnostic skills; used tool choices and trajectory graphs for watermark-free attribution of unauthorised imitation.
+        </p>
+       </article>
+       <article class="publication-entry publication-item-soft">
+        <h3 class="publication-entry-title">
+         Mnemosyne: Reactivating Latent Watermark Pattern Memories for LLM IP Infringement Detection
+        </h3>
+        <p class="publication-entry-meta">
+         WWW 2027 — Under review
+        </p>
+        <p class="publication-entry-summary">
+         Recovered latent watermarks via memory reactivation and pseudo-key calibration; detection improved by up to 40.7%.
+        </p>
+       </article>
+       <article class="publication-entry publication-item-soft">
+        <h3 class="publication-entry-title">
+         BINDER: Sensitive Information Leakage from Private Memory in Multi-User LLM Agent Systems
+        </h3>
+        <p class="publication-entry-meta">
+         WWW 2027 — Under review
+        </p>
+        <p class="publication-entry-summary">
+         Combined memory poisoning via prompt injection with instruction reordering to study cross-user private-data extraction in agents with memory isolation and access controls.
+        </p>
+       </article>
+       <article class="publication-entry publication-item-soft">
+        <div class="publication-card">
+         <div class="publication-entry-visual">
+          <span class="publication-entry-badge publication-entry-badge-arxiv">
+           arXiv
+          </span>
+          <a class="publication-entry-thumbnail" href="https://arxiv.org/abs/2512.03356">
+           <img alt="Figure preview for From static to adaptive: immune memory-based jailbreak detection for large language models" src="assets/publication-arxiv.png"/>
+          </a>
+         </div>
+         <div class="publication-entry-body">
+          <h4 class="publication-entry-title">
+           <a href="https://arxiv.org/abs/2512.03356">
+            From static to adaptive: immune memory-based jailbreak detection for large
                     language models
-                  </a>
-                </h4>
-                <p class="publication-entry-authors">
-                  Jun Leng, Yu Liu, Litian Zhang, <strong>Ruihan Hu</strong>, Zhuting Fang, and Xi Zhang
-                </p>
-                <p class="publication-entry-meta">arXiv preprint arXiv:2512.03356, 2025</p>
-                <p class="publication-entry-summary">
-                  This work presents a multi-agent adaptive guard for jailbreak detection. Inspired
+           </a>
+          </h4>
+          <p class="publication-entry-authors">
+           Jun Leng, Yu Liu, Litian Zhang,
+           <strong>
+            Ruihan Hu
+           </strong>
+           , Zhuting Fang, and Xi Zhang
+          </p>
+          <p class="publication-entry-meta">
+           arXiv preprint arXiv:2512.03356, 2025 · WWW 2027 — Under review
+          </p>
+          <p class="publication-entry-summary">
+           This work presents a multi-agent adaptive guard for jailbreak detection. Inspired
                   by immune memory, it retrieves relevant historical patterns and combines memory
                   matching with response simulation to better detect evolving attacks.
-                </p>
-                <div class="publication-entry-actions">
-                  <a
-                    class="publication-entry-chip publication-entry-chip-primary"
-                    href="https://arxiv.org/abs/2512.03356"
-                  >
-                    Paper
-                  </a>
-                </div>
-              </div>
-                </div>
-              </article>
-            </div>
-          </section>
-        </main>
+          </p>
+          <div class="publication-entry-actions">
+           <a class="publication-entry-chip publication-entry-chip-primary" href="https://arxiv.org/abs/2512.03356">
+            Paper
+           </a>
+          </div>
+         </div>
+        </div>
+       </article>
       </div>
-    </div>
-    <dialog class="coming-soon-dialog" id="coming-soon-dialog" aria-labelledby="coming-soon-title">
-      <div class="coming-soon-panel">
-        <h3 id="coming-soon-title">Coming soon</h3>
-        <p>Paper and code links will be released later.</p>
-        <button class="coming-soon-close" type="button" data-close-dialog>
-          Close
-        </button>
-      </div>
-    </dialog>
-    <script>
-      const comingSoonDialog = document.getElementById("coming-soon-dialog");
+     </section>
+    </main>
+   </div>
+  </div>
+  <dialog aria-labelledby="coming-soon-title" class="coming-soon-dialog" id="coming-soon-dialog">
+   <div class="coming-soon-panel">
+    <h3 id="coming-soon-title">
+     Coming soon
+    </h3>
+    <p>
+     Paper and code links will be released later.
+    </p>
+    <button class="coming-soon-close" data-close-dialog="" type="button">
+     Close
+    </button>
+   </div>
+  </dialog>
+  <script>
+   const comingSoonDialog = document.getElementById("coming-soon-dialog");
       document.querySelectorAll("[data-coming-soon]").forEach((trigger) => {
         trigger.addEventListener("click", () => {
           if (typeof comingSoonDialog.showModal === "function") {
@@ -268,6 +328,6 @@
       document.querySelector("[data-close-dialog]").addEventListener("click", () => {
         comingSoonDialog.close();
       });
-    </script>
-  </body>
+  </script>
+ </body>
 </html>
