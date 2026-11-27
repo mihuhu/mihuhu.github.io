@@ -94,3 +94,7 @@
 
 .academic-awards { font-size: 13px; }
 .honours-heading { font-size: 14px; }
+
+/* Compact icons for the homepage contact links. */
+.academic-links a { display: inline-flex; align-items: center; gap: 5px; }
+.academic-links .link-icon { width: 15px; height: 15px; flex: none; }
